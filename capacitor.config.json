@@ -1,7 +1,7 @@
 {
   "appId": "com.h90.player",
   "appName": "H90 Player",
-  "webDir": ".",
+  "webDir": "www",
   "bundledWebRuntime": false,
   "android": {
     "allowMixedContent": true,
@@ -12,9 +12,7 @@
   "server": {
     "androidScheme": "https",
     "cleartext": true,
-    "allowNavigation": [
-      "*"
-    ]
+    "allowNavigation": ["*"]
   },
   "plugins": {
     "SplashScreen": {
@@ -23,18 +21,11 @@
       "backgroundColor": "#000000",
       "androidSplashResourceName": "splash",
       "androidScaleType": "CENTER_CROP",
-      "showSpinner": false,
-      "splashFullScreen": true,
-      "splashImmersive": true
+      "showSpinner": false
     },
     "StatusBar": {
       "style": "DARK",
-      "backgroundColor": "#000000",
-      "overlaysWebView": true
-    },
-    "VideoPlayer": {
-      "autoFullscreen": true,
-      "hardwareAcceleration": true
+      "backgroundColor": "#000000"
     }
   }
 }
