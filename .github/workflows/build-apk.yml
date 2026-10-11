@@ -23,6 +23,15 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Prepare www folder
+        run: |
+          mkdir -p www
+          cp index.html www/
+          cp player.css www/
+          cp player.js www/
+          cp manifest.json www/
+          cp H90player.png www/
+
       - name: Install Deps
         run: npm install --legacy-peer-deps
 
